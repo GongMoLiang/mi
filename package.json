@@ -7,11 +7,11 @@
 		"dev": "webpack-dev-server",
 		"build": "webpack",
 		"server": "nodemon ./server/app.js",
-		"precommit": "lint-staged"
+		"lint": "lint-staged"
 	},
 	"lint-staged": {
-		"src/**/*.(js|jsx)": [
-			"eslint --fix",
+		"src/**/*.{js,jsx)": [
+			"eslint",
 			"git add"
 		]
 	},
