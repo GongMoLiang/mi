@@ -33,7 +33,9 @@ module.exports = {
 	//            className=""
 	//            style={{}} >
 
-	jsxBracketSameLine: true
+	jsxBracketSameLine: true,
+
+	elsintIntergration: true
 }
 
 // vscode 中安装prettierrc插件 需要在settings.josn文件中设置如下配置才能生效
