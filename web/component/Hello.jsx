@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { Button, Row, Col } from 'antd'
+import { Button, Row, Col, Card } from 'antd'
 
 @connect(store => store)
 export default class Hello extends Component {

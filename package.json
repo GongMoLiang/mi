@@ -11,7 +11,8 @@
 	},
 	"lint-staged": {
 		"./web/**/*.{js,jsx}": [
-			"eslint"
+			"eslint --fix",
+			"prettier --write"
 		]
 	},
 	"keywords": [],
