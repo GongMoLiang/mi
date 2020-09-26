@@ -11,7 +11,7 @@ module.exports = {
 		ecmaVersion: 12,
 		sourceType: "module"
 	},
-	plugins: ["react", "prettier"],
+	plugins: ["react"],
 	rules: {
 		index: [2, 4]
 	}

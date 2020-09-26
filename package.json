@@ -9,7 +9,7 @@
 		"server": "nodemon ./server/app.js"
 	},
 	"lint-staged": {
-		"./websrc/**/*.{js,jsx)": [
+		"./web/src/**/*.{js,jsx)": [
 			"eslint"
 		]
 	},
