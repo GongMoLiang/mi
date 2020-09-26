@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import { connect } from "react-redux"
-import { Button, Row, Cow, Card } from "antd"
+import { Button, Row, Cow } from "antd"
 
 @connect(store => store)
 export default class Hello extends Component {
@@ -12,8 +12,6 @@ export default class Hello extends Component {
 		})
 	}
 	render() {
-		const a = 2
-		a = 4
 		const { name, age } = this.props
 		return (
 			<div>
