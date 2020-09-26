@@ -9,8 +9,8 @@
 		"server": "nodemon ./server/app.js"
 	},
 	"lint-staged": {
-		"*": [
-			"eslint --fix"
+		"src/*.{js,jsx)": [
+			"eslint"
 		]
 	},
 	"husky": {
