@@ -7,8 +7,9 @@ module.exports = {
 	parser: 'babel-eslint',
 	plugins: ['react', 'prettier'],
 	rules: {
-		'prettier/prettier': 'error',
+		'prettier/prettier': 'off',
 		strict: 'off',
-		'no-console': 'off'
+		'no-console': 'off',
+		'no-unused-vars': [2, { vars: 'all', args: 'after-used' }]
 	}
 }
