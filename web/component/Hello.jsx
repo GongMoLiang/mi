@@ -12,6 +12,8 @@ export default class Hello extends Component {
 		})
 	}
 	render() {
+		const a = 2
+		a = 4
 		const { name, age } = this.props
 		return (
 			<div>
