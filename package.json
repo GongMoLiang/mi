@@ -6,17 +6,13 @@
 	"scripts": {
 		"dev": "webpack-dev-server",
 		"build": "webpack",
-		"server": "nodemon ./server/app.js"
+		"server": "nodemon ./server/app.js",
+		"lint": "lint-staged"
 	},
 	"lint-staged": {
-		"./web/src/**/*.{js,jsx}": [
+		"./web/**/*.{js,jsx}": [
 			"eslint"
 		]
-	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "lint-staged"
-		}
 	},
 	"keywords": [],
 	"author": "",

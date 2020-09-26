@@ -2,7 +2,7 @@ module.exports = {
 	printWidth: 80,
 
 	// tab缩进大小
-	tabWidth: 4,
+	tabWidth: 2,
 
 	// 是否使用tab缩进
 	useTabs: true,
@@ -11,8 +11,11 @@ module.exports = {
 	semi: false,
 
 	//是否用单引号 fale 双引号 true 单引号
-	singleQuote: false,
-	trailingComma: "none",
+	// 对jsx语法无效
+	singleQuote: true,
+
+
+	trailingComma: 'none',
 
 	// 对象中的空格 默认为true
 	// true : { foo: bar }
@@ -22,7 +25,7 @@ module.exports = {
 	// 箭头函数参数括号 可选avoid| always
 	// avoid 能省略时就省略
 	// always 总是有括号
-	arrowParens: "avoid",
+	arrowParens: 'avoid',
 
 	// jsx标签闭合位置
 	// fasle: <div

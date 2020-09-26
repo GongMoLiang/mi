@@ -1,13 +1,13 @@
-import React, { Component } from "react"
-import { connect } from "react-redux"
-import { Button, Row, Cow } from "antd"
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { Button, Row, Col } from 'antd'
 
 @connect(store => store)
 export default class Hello extends Component {
 	handleAge = () => {
 		const { dispatch } = this.props
 		dispatch({
-			type: "CHANGE_AGE",
+			type: 'CHANGE_AGE',
 			age: 20
 		})
 	}
