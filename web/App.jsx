@@ -1,7 +1,7 @@
-import React, { Component } from "react"
-import { Provider, Button } from "react-redux"
-import store from "./store/index"
-import LayoutContanier from "./component/common/Layout.jsx"
+import React, { Component } from 'react'
+import { Provider, Button, Row } from 'react-redux'
+import store from './store/index'
+import LayoutContanier from './component/common/Layout.jsx'
 
 export default class App extends Component {
 	render() {
