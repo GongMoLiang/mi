@@ -1,25 +1,20 @@
 import React, { Component } from 'react'
 import { Provider } from 'react-redux'
-import { Route, Switch, HashRouter, Redirect } from 'react-router-dom'
+import { HashRouter, Redirect } from 'react-router-dom'
 import store from './store/index'
-import routers from './component/router/router'
-//import LayoutContanier from './component/common/Layout.jsx'
+import homeRouters from './config/homerouter'
+import Router from './common/component/Router'
 
 export default class App extends Component {
 	render() {
 		return (
 			<Provider store={store}>
 				<HashRouter>
-					<Switch>
-						{_.map(routers, (item, index) => (
-							<Route
-								key={index}
-								path={item.path}
-								exact={item.exact}
-								component={item.component}></Route>
-						))}
-						<Redirect to="/student"></Redirect>
-					</Switch>
+				    <Router
+					    routers= { homeRouters }
+					>
+					     <Redirect to="/student/manage/list"></Redirect>
+					</Router>
 				</HashRouter>
 			</Provider>
 		)
