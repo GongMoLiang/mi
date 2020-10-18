@@ -1,4 +1,4 @@
-/* 
+/*
 *  页面布局组件
 */
 
@@ -13,6 +13,7 @@ import './PageLayout.less'
 export default class PageLayout extends Component{
 
     render(){
+        // eslint-disable-next-line react/prop-types
         const { routers= [], menus= [] } = this.props
         const selectKey = _.get(menus,'0.key','1')
         const openKey = _.get(menus,'0.sub.0.key','sub1')
@@ -24,7 +25,7 @@ export default class PageLayout extends Component{
                     defaultSelectedKeys={[selectKey]}
                     defaultOpenKeys={[openKey]}
                     style={{ height: '100%', borderRight: 0 }}
-                >   
+                >
                    {
                        _.map(menus,item => {
                            return (
@@ -47,8 +48,8 @@ export default class PageLayout extends Component{
                 <aside className="content-right">
                      <Router
                           routers={routers}/>
-                </aside> 
-            </Fragment> 
+                </aside>
+            </Fragment>
         )
     }
 }
